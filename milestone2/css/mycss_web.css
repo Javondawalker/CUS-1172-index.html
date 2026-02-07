@@ -1,0 +1,75 @@
+/* BASIC PAGE STYLING */
+body {
+  background-color: #6a0dad; /* violet */
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* HEADERS */
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* CENTER ALL SECTIONS */
+div {
+  width: 80%;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* MENU */
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 6px 0;
+}
+
+/* LINKS */
+a {
+  color: #9ad9ff;
+  font-weight: bold;
+}
+
+a:hover {
+  color: white;
+}
+
+/* IMAGES — EXACT SIZE LIKE MILESTONE 1 */
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* TABLE */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px 12px;
+}
+
+/* FORM */
+input {
+  width: 60%;
+  padding: 6px;
+}
+
+button {
+  padding: 6px 14px;
+}

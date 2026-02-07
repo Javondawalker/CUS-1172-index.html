@@ -1,0 +1,29 @@
+/* SMALL SCREENS */
+@media (max-width: 768px) {
+  div {
+    width: 95%;
+  }
+
+  iframe {
+    width: 95%;
+    height: 220px;
+  }
+}
+
+/* PRINT */
+@media print {
+  body {
+    background: white;
+    color: black;
+    text-align: left;
+  }
+
+  div {
+    background: none;
+    border: 1px solid black;
+  }
+
+  a {
+    color: black;
+  }
+}
