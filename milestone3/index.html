@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javonda Walker - CUS 1172 Project 1 (Milestone 3 - Bootstrap 4)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- REQUIRED: style tag -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <!-- BS4 Getting Started: Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
+
+  <!-- REQUIRED: your external CSS from Milestone 2 (paths assume milestone3/index.html) -->
+  <link rel="stylesheet" href="../milestone2/css/mycss_web.css">
+  <link rel="stylesheet" href="../milestone2/css/mycss_tablet.css">
+</head>
+
+<body>
+
+  <!-- BS4 Navbar (component) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Javonda Walker</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#basic">Basic</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#favorites">Favorites</a></li>
+          <li class="nav-item"><a class="nav-link" href="#websites">Websites</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="top"></div>
+
+  <!-- inline style REQUIRED -->
+  <h1 style="background-color:#6a0dad;" class="text-white py-3 mb-0 text-center">
+    Javonda Walker – CUS 1172 Project 1 Profile Page (Milestone 3)
+  </h1>
+
+  <!-- BS4 Alert (component) -->
+  <div class="container mt-3">
+    <div class="alert alert-primary" role="alert">
+      Milestone 3: Same content as Milestone 2, organized using Bootstrap 4 containers + grid + components.
+    </div>
+  </div>
+
+  <!-- BS4 Containers + Grid Layout -->
+  <main class="container my-4">
+
+    <!-- MENU (Card + List Group) -->
+    <section class="mb-4" id="menu">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Menu</h2>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#basic">Basic Profile</a></li>
+              <li class="list-group-item"><a href="#education">Education</a></li>
+              <li class="list-group-item"><a href="#work">Work Experience</a></li>
+              <li class="list-group-item"><a href="#skills">Programming Skills</a></li>
+              <li class="list-group-item"><a href="#interests">General Interests</a></li>
+              <li class="list-group-item"><a href="#favorites">Favorite Song, Film & TV</a></li>
+              <li class="list-group-item"><a href="#websites">Favorite Websites</a></li>
+              <li class="list-group-item"><a href="#projects">My Projects</a></li>
+              <li class="list-group-item"><a href="#contact">Contact Form</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BASIC -->
+    <section id="basic" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="h4 mb-3">Basic Profile Information</h2>
+        </div>
+
+        <!-- Left column -->
+        <div class="col-12 col-lg-6 mb-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <p class="mb-2"><strong>Name:</strong> Javonda Walker<br>
+                <strong>Major:</strong> Computer Science
+              </p>
+
+              <!-- BS4 Badges -->
+              <span class="badge badge-success">Bootstrap 4</span>
+              <span class="badge badge-secondary">Grid + Components</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-12 col-lg-6 mb-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <p class="mb-2"><strong>Profile Pic:</strong></p>
+
+              <!-- BS4 Images -->
+              <img src="../images/IMG_1.jpg" alt="Profile Photo"
+                   class="img-fluid rounded shadow-sm mb-3" style="max-width:200px;">
+
+              <p class="mb-2"><strong>Image from Internet:</strong></p>
+              <img src="../images/beagle-hound-dog.jpg.webp" alt="Beagle Hound Dog"
+                   class="img-fluid rounded shadow-sm" style="max-width:200px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Education</h2>
+              <p class="mb-0">
+                I am currently studying Computer Science and developing skills in programming,
+                web development, and problem solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Work Experience</h2>
+              <ul class="mb-0">
+                <li>User Acceptance Testing Intern – Verisk</li>
+                <li>Bartender/Union Delegate– Jake’s 58 Casino</li>
+              </ul>
+
+              <!-- BS4 Buttons -->
+              <div class="mt-3">
+                <a class="btn btn-outline-primary btn-sm" href="#contact">Contact Me</a>
+                <a class="btn btn-dark btn-sm" href="#projects">See Projects</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Programming Skills</h2>
+
+              <!-- BS4 Table -->
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped mb-0">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Language</th>
+                      <th>Experience</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Java</td><td>Proficient</td></tr>
+                    <tr><td>C++</td><td>Basic</td></tr>
+                    <tr><td>HTML</td><td>Basic</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- BS4 Progress (extra) -->
+              <div class="mt-4">
+                <p class="mb-2"><strong>Skill Levels (visual):</strong></p>
+
+                <div class="mb-2">
+                  <small>Java</small>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                  </div>
+                </div>
+
+                <div class="mb-2">
+                  <small>C++</small>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                  </div>
+                </div>
+
+                <div>
+                  <small>HTML</small>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">General Interests</h2>
+              <p class="mb-0">Working out, Pilates, Trying New Food, Content Creation and Hiking.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAVORITES -->
+    <section id="favorites" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Favorite Song, Film, and TV Show</h2>
+
+              <!-- BS4 responsive embeds -->
+              <p class="mt-3 mb-2"><strong>Favorite Song: "I Wonder" by Kanye West</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MxEjnYdfLXU" allowfullscreen></iframe>
+              </div>
+
+              <p class="mt-4 mb-2"><strong>Favorite Movie Trailer:</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mgjwq1ZzdPQ" allowfullscreen></iframe>
+              </div>
+
+              <p class="mt-4 mb-2"><strong>Favorite TV Show Clip:</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/f8mVeTVTrlI?start=5" allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEBSITES -->
+    <section id="websites" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Favorite Websites</h2>
+              <ul class="mb-0">
+                <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+                <li><a href="https://www.reddit.com" target="_blank" rel="noopener">Reddit</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">My Projects</h2>
+              <a class="btn btn-outline-primary btn-sm" href="../index.html">Project 1 – Milestone 01</a>
+              <a class="btn btn-outline-primary btn-sm" href="../milestone2/index.html">Project 1 – Milestone 02</a>
+              <a class="btn btn-primary btn-sm" href="#">Project 1 – Milestone 03</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (BS4 Forms + Custom Forms) -->
+    <section id="contact" class="mb-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h4">Contact Form</h2>
+
+              <form>
+                <!-- BS4 Forms -->
+                <div class="form-group">
+                  <label for="yourName">Your Name</label>
+                  <input type="text" class="form-control" id="yourName" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                  <label for="yourMessage">Message</label>
+                  <input type="text" class="form-control" id="yourMessage" placeholder="Message">
+                </div>
+
+                <!-- BS4 Custom Forms -->
+                <div class="form-group">
+                  <label for="topic">Topic</label>
+                  <select class="custom-select" id="topic">
+                    <option selected>Choose one...</option>
+                    <option value="school">School</option>
+                    <option value="work">Work</option>
+                    <option value="projects">Projects</option>
+                  </select>
+                </div>
+
+                <div class="custom-file mb-3">
+                  <input type="file" class="custom-file-input" id="fileUpload">
+                  <label class="custom-file-label" for="fileUpload">Choose file</label>
+                </div>
+
+                <!-- BS4 Buttons -->
+                <button type="submit" class="btn btn-dark">Send</button>
+                <button type="reset" class="btn btn-outline-secondary">Reset</button>
+              </form>
+
+              <p class="mt-3 mb-0 small text-muted">
+                Note: This form is for layout practice (does not actually send).
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <small>© 2026 Javonda Walker</small>
+    </div>
+  </footer>
+
+  <!-- BS4 Getting Started: Bootstrap 4 JS dependencies -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+
+  <!-- Optional: makes the custom-file label show selected filename -->
+  <script>
+    document.addEventListener('change', function (e) {
+      if (e.target && e.target.classList.contains('custom-file-input')) {
+        var fileName = e.target.files.length ? e.target.files[0].name : "Choose file";
+        var nextSibling = e.target.nextElementSibling;
+        if (nextSibling) nextSibling.innerText = fileName;
+      }
+    });
+  </script>
+
+</body>
+</html>
