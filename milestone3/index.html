@@ -5,37 +5,51 @@
   <title>Javonda Walker - CUS 1172 Project 1 (Milestone 3 - Bootstrap 4)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- REQUIRED: style tag -->
   <style>
     html { scroll-behavior: smooth; }
-  /* FIX: Bootstrap 4 navbar toggler icon showing as a blank/white box */
-  .navbar-dark .navbar-toggler {
-    border-color: rgba(255,255,255,.2) !important;
-    outline: none !important;
-  }
-  .navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.85%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-  }
 
-  /* Prevent old CSS from styling navbar links/brand */
-  .navbar a {
-    background: transparent !important;
-    box-shadow: none !important;
-    border: 0 !important;
-  }
-</style>
+    /* Keep Milestone 2 CSS from overriding the Bootstrap navbar */
+    .navbar,
+    .navbar * {
+      background: transparent;
+      box-shadow: none;
+    }
 
-  <!-- BS4 Getting Started: Bootstrap 4 CSS -->
+    .navbar.bg-dark {
+      background-color: #343a40 !important;
+    }
+
+    .navbar a {
+      text-decoration: none !important;
+      border: 0 !important;
+    }
+
+    .navbar-dark .navbar-toggler {
+      border: 0 !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar-dark .navbar-toggler:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .navbar-dark .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.85%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    }
+  </style>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/css/bootstrap.min.css">
 
-  <!-- REQUIRED: your external CSS from Milestone 2 (paths assume milestone3/index.html) -->
   <link rel="stylesheet" href="../milestone2/css/mycss_web.css">
   <link rel="stylesheet" href="../milestone2/css/mycss_tablet.css">
 </head>
 
 <body>
 
-  <!-- BS4 Navbar (component) -->
+  <div id="top"></div>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#top">Javonda Walker</a>
@@ -61,24 +75,18 @@
     </div>
   </nav>
 
-  <div id="top"></div>
-
-  <!-- inline style REQUIRED -->
   <h1 style="background-color:#6a0dad;" class="text-white py-3 mb-0 text-center">
     Javonda Walker – CUS 1172 Project 1 Profile Page (Milestone 3)
   </h1>
 
-  <!-- BS4 Alert (component) -->
   <div class="container mt-3">
     <div class="alert alert-primary" role="alert">
       Milestone 3: Same content as Milestone 2, organized using Bootstrap 4 containers + grid + components.
     </div>
   </div>
 
-  <!-- BS4 Containers + Grid Layout -->
   <main class="container my-4">
 
-    <!-- MENU (Card + List Group) -->
     <section class="mb-4" id="menu">
       <div class="row">
         <div class="col-12">
@@ -102,35 +110,28 @@
       </div>
     </section>
 
-    <!-- BASIC -->
     <section id="basic" class="mb-4">
       <div class="row">
         <div class="col-12">
           <h2 class="h4 mb-3">Basic Profile Information</h2>
         </div>
 
-        <!-- Left column -->
         <div class="col-12 col-lg-6 mb-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <p class="mb-2"><strong>Name:</strong> Javonda Walker<br>
                 <strong>Major:</strong> Computer Science
               </p>
-
-              <!-- BS4 Badges -->
               <span class="badge badge-success">Bootstrap 4</span>
               <span class="badge badge-secondary">Grid + Components</span>
             </div>
           </div>
         </div>
 
-        <!-- Right column -->
         <div class="col-12 col-lg-6 mb-3">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <p class="mb-2"><strong>Profile Pic:</strong></p>
-
-              <!-- BS4 Images -->
               <img src="../images/IMG_1.jpg" alt="Profile Photo"
                    class="img-fluid rounded shadow-sm mb-3" style="max-width:200px;">
 
@@ -143,7 +144,6 @@
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -160,7 +160,6 @@
       </div>
     </section>
 
-    <!-- WORK -->
     <section id="work" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -172,19 +171,16 @@
                 <li>Bartender/Union Delegate– Jake’s 58 Casino</li>
               </ul>
 
-              <!-- BS4 Buttons -->
               <div class="mt-3">
                 <a class="btn btn-outline-primary btn-sm" href="#contact">Contact Me</a>
                 <a class="btn btn-dark btn-sm" href="#projects">See Projects</a>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -192,7 +188,6 @@
             <div class="card-body">
               <h2 class="h4">Programming Skills</h2>
 
-              <!-- BS4 Table -->
               <div class="table-responsive">
                 <table class="table table-bordered table-striped mb-0">
                   <thead class="thead-dark">
@@ -209,7 +204,6 @@
                 </table>
               </div>
 
-              <!-- BS4 Progress (extra) -->
               <div class="mt-4">
                 <p class="mb-2"><strong>Skill Levels (visual):</strong></p>
 
@@ -241,7 +235,6 @@
       </div>
     </section>
 
-    <!-- INTERESTS -->
     <section id="interests" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -255,7 +248,6 @@
       </div>
     </section>
 
-    <!-- FAVORITES -->
     <section id="favorites" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -263,37 +255,36 @@
             <div class="card-body">
               <h2 class="h4">Favorite Song, Film, and TV Show</h2>
 
-                <!-- BS4 responsive embeds (Milestone 2 iframe settings) -->
-                <p class="mt-3 mb-2"><strong>Favorite Song: "I Wonder" by Kanye West</strong></p>
-                <div class="embed-responsive embed-responsive-16by9">
+              <p class="mt-3 mb-2"><strong>Favorite Song: "I Wonder" by Kanye West</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/MxEjnYdfLXU"
-                    title="I Wonder - Kanye West"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                </div>
+                        src="https://www.youtube.com/embed/MxEjnYdfLXU"
+                        title="I Wonder - Kanye West"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
 
-                <p class="mt-4 mb-2"><strong>Favorite Movie Trailer:</strong></p>
-                <div class="embed-responsive embed-responsive-16by9">
+              <p class="mt-4 mb-2"><strong>Favorite Movie Trailer:</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
-                    src="https://www.youtube.com/embed/Mgjwq1ZzdPQ"
-                    title="Favorite Movie Trailer"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-                </div>
-                    <p class="mt-4 mb-2"><strong>Favorite TV Show Clip:</strong></p>
-                    <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube.com/embed/Mgjwq1ZzdPQ"
+                        title="Favorite Movie Trailer"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+              </div>
+
+              <p class="mt-4 mb-2"><strong>Favorite TV Show Clip:</strong></p>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
                         src="https://www.youtube.com/embed/f8mVeTVTrlI?si=gD3IDA98poNwuKnt"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
-                    </div>
+                        allowfullscreen></iframe>
+              </div>
 
             </div>
           </div>
@@ -301,7 +292,6 @@
       </div>
     </section>
 
-    <!-- WEBSITES -->
     <section id="websites" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -318,7 +308,6 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="mb-4">
       <div class="row">
         <div class="col-12">
@@ -334,7 +323,6 @@
       </div>
     </section>
 
-    <!-- CONTACT (BS4 Forms + Custom Forms) -->
     <section id="contact" class="mb-5">
       <div class="row">
         <div class="col-12">
@@ -343,7 +331,6 @@
               <h2 class="h4">Contact Form</h2>
 
               <form>
-                <!-- BS4 Forms -->
                 <div class="form-group">
                   <label for="yourName">Your Name</label>
                   <input type="text" class="form-control" id="yourName" placeholder="Your Name">
@@ -354,7 +341,6 @@
                   <input type="text" class="form-control" id="yourMessage" placeholder="Message">
                 </div>
 
-                <!-- BS4 Custom Forms -->
                 <div class="form-group">
                   <label for="topic">Topic</label>
                   <select class="custom-select" id="topic">
@@ -370,13 +356,12 @@
                   <label class="custom-file-label" for="fileUpload">Choose file</label>
                 </div>
 
-                <!-- BS4 Buttons -->
                 <button type="submit" class="btn btn-dark">Send</button>
                 <button type="reset" class="btn btn-outline-secondary">Reset</button>
               </form>
 
               <p class="mt-3 mb-0 small text-muted">
-                Note: This form is for layout practice (does not actually send).
+                Note: form is for practice (does not send).
               </p>
 
             </div>
@@ -393,18 +378,16 @@
     </div>
   </footer>
 
-  <!-- BS4 Getting Started: Bootstrap 4 JS dependencies -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.2/js/bootstrap.min.js"></script>
 
-  <!-- Optional: makes the custom-file label show selected filename -->
   <script>
     document.addEventListener('change', function (e) {
       if (e.target && e.target.classList.contains('custom-file-input')) {
         var fileName = e.target.files.length ? e.target.files[0].name : "Choose file";
-        var nextSibling = e.target.nextElementSibling;
-        if (nextSibling) nextSibling.innerText = fileName;
+        var label = e.target.nextElementSibling;
+        if (label) label.innerText = fileName;
       }
     });
   </script>
